@@ -13,11 +13,5 @@ class User < ApplicationRecord
     else
       return "happy"
     end
-
-    # if self.happiness && self.nausea
-    #   mood = self.happiness - self.nausea
-    #   mood > 0 ? "happy" : "sad"
-    # end
-
   end
 end
