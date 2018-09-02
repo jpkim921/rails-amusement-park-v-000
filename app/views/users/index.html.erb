@@ -1,25 +1,25 @@
 <h1>List of Users</h1>
 
-<% @users.each do |user| %>
 
-  <table border=1>
-    <tbody>
-      <th>
-        <td>Name</td>
-        <td>PD:</td>
-        <td>Nausea</td>
-        <td>Happiness</td>
-        <td>Tickets</td>
-        <td>Heights</td>
-      </th>
-      <tr>
-        <td>Name: <%= user.name %></td>
-        <td>PD: <%= user.password_digest %></td>
-        <td>Nausea: <%= user.nausea %></td>
-        <td>Happiness: <%= user.happiness %></td>
-        <td>Tickets: <%= user.tickets %></td>
-        <td>Height: <%= user.height %></td>
-      </tr>
+<table border=1>
+  <tbody>
+    <th>
+      <td>Name</td>
+      <td>PD:</td>
+      <td>Nausea</td>
+      <td>Happiness</td>
+      <td>Tickets</td>
+      <td>Heights</td>
+    </th>
+    <% @users.each do |user| %>
+    <tr>
+      <td>Name: <%= user.name %></td>
+      <td>PD: <%= user.password_digest %></td>
+      <td>Nausea: <%= user.nausea %></td>
+      <td>Happiness: <%= user.happiness %></td>
+      <td>Tickets: <%= user.tickets %></td>
+      <td>Height: <%= user.height %></td>
+    </tr>
     </tbody>
   </table>
 
