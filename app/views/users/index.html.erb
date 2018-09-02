@@ -1,11 +1,11 @@
 <h1>List of Users</h1>
 
 <%= @users.each do |user| %>
-  Name: <li><%= user.name %></li>
-  PD: <li><%= user.password_digest %></li>
-  Nausea: <li><%= user.nausea %></li>
-  Happiness: <li><%= user.happiness %></li>
-  Tickets: <li><%= user.tickets %></li>
-  Height: <li><%= user.height %></li>
+  <li> Name: <%= user.name %></li>
+  PD: <%= user.password_digest %></li>
+  Nausea: <%= user.nausea %></li>
+  Happiness: <%= user.happiness %></li>
+  Tickets: <%= user.tickets %></li>
+  Height: <%= user.height %></li>
 
 <% end %>
