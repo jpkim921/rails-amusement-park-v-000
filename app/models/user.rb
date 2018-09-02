@@ -6,18 +6,18 @@ class User < ApplicationRecord
 
   def mood
 
-    # return "Not Applicable" if self.admin
-    #
-    # if self.nausea > self.happiness
-    #   return "sad"
-    # else
-    #   return "happy"
-    # end
+    return "Not Applicable" if self.admin
 
-    if self.happiness && self.nausea
-      mood = self.happiness - self.nausea
-      mood > 0 ? "happy" : "sad"
+    if self.nausea > self.happiness
+      return "sad"
+    else
+      return "happy"
     end
+
+    # if self.happiness && self.nausea
+    #   mood = self.happiness - self.nausea
+    #   mood > 0 ? "happy" : "sad"
+    # end
 
   end
 end
