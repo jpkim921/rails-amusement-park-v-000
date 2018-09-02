@@ -16,6 +16,8 @@ rails g model User name:string password_digest:integer nausea:integer happiness:
 
 rails g migration AddAdminColumnToUsersTable Users admin:boolean --no-test-framework
 
+rails g migration change_phone_to_be_string_in_customers --no-test-framework
+
 
 
 Ride
