@@ -5,7 +5,13 @@ class User < ApplicationRecord
 
 
   def mood
-    binding.pry
-    (self.nausea > self.happiness) ? "sad" : "happy"
+
+    return "Not Applicable" if self.admin
+    
+    if self.nausea > self.happiness
+      return "sad"
+    else
+      return "happy"
+    end
   end
 end
