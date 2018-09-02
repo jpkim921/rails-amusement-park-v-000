@@ -19,6 +19,5 @@ class User < ApplicationRecord
       mood > 0 ? "happy" : "sad"
     end
 
-
   end
 end
