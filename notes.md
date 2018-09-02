@@ -25,3 +25,15 @@ belongs_to :user
 
 
 rails g model Ride user_id:integer attraction_id:integer --no-test-framework
+
+
+
+
+
+<%= form_for @user, url: signin_path(@user) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :password %>
+  <%= f.password_field :password %><br>
+  <%= f.submit "Sign In"%>
+<% end %>
