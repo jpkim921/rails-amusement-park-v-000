@@ -13,12 +13,12 @@
     </th>
     <% @users.each do |user| %>
     <tr>
-      <td>Name: <%= user.name %></td>
-      <td>PD: <%= user.password_digest %></td>
-      <td>Nausea: <%= user.nausea %></td>
-      <td>Happiness: <%= user.happiness %></td>
-      <td>Tickets: <%= user.tickets %></td>
-      <td>Height: <%= user.height %></td>
+      <td><%= user.name %></td>
+      <td><%= user.password_digest %></td>
+      <td><%= user.nausea %></td>
+      <td><%= user.happiness %></td>
+      <td><%= user.tickets %></td>
+      <td><%= user.height %></td>
     </tr>
     </tbody>
   </table>
