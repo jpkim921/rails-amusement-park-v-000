@@ -13,5 +13,6 @@ class User < ApplicationRecord
     else
       return "happy"
     end
+    
   end
 end
