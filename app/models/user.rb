@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
 
   def mood
+    binding.pry
     (self.nausea > self.happiness) ? "sad" : "happy"
   end
 end
